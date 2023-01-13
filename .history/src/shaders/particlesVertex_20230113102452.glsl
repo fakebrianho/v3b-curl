@@ -8,6 +8,5 @@ void main() {
   gl_Position = projectionMatrix * mvPosition;
   // gl_PointSize = uPointSize / -mvPosition.z;
   // gl_PointSize = uPointSize;
-  gl_PointSize = uPointSize * 3.0;
   gl_PointSize *= step(1.0 - (1.0/64.0), position.z) + 0.5;
 }

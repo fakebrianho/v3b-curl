@@ -30,7 +30,7 @@ export default function initFbo(renderer) {
 		data,
 		fboWidth,
 		fboHeight,
-		RGBAFormat,
+		RGBFormat,
 		FloatType
 	)
 	positions.needsUpdate = true
