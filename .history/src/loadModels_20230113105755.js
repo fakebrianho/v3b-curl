@@ -14,7 +14,7 @@ gltfLoader.setDRACOLoader(dracoLoader)
 export default async function loadModels(scene) {
 	const [{ scene: gltfScene }, env] = await Promise.all([
 		/*
-			"Human Heart" (https://skfb.ly/oxprw) by sahilseth is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/)
+"Human Heart" (https://skfb.ly/oxprw) by sahilseth is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/)
 		*/
 		new Promise((res) => gltfLoader.load('/human_heart.glb', res)),
 		new Promise((res) =>
