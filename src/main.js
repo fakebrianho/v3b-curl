@@ -2,6 +2,7 @@ import './style.css'
 import * as THREE from 'three'
 import { sizes, camera } from './camera'
 import { PARAMS, pane, orbit } from './controls'
+import loadModels from './loadModels'
 import { resize } from './eventListeners'
 import initFbo from './initFBO'
 import background from './background'
@@ -23,6 +24,7 @@ function init() {
 	document.body.appendChild(renderer.domElement)
 	resize(camera, renderer, sizes)
 	orbit(camera, renderer)
+	loadModels(scene)
 	add()
 	animate()
 }
